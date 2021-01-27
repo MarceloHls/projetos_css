@@ -1,0 +1,36 @@
+.containerBubles {
+    height: 100%;
+    width: 100vw;
+    position: absolute;
+    z-index: -1;
+}
+
+.bubble {
+    background-color: aqua;
+    position: absolute;
+    border-radius: 100%;
+    animation: animate 20s infinite;
+}
+
+.bubble:nth-child(even) {
+    background: transparent;
+    border: 1px solid aqua;
+    
+}
+
+@keyframes animate {
+    0% {
+        transform: translateY(0);
+        opacity: 0;
+    }
+    10% {
+        opacity: 1;
+    }
+    90% {
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(-2000%);
+        opacity: 0;
+    }
+}
